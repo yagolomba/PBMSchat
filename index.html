@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PBMS Sigma Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <svg>
+        <circle class="particle1" cx="15%" cy="123%" r="5%" />
+        <circle class="particle1" cx="35%" cy="121%" r="4.5%" />
+        <circle class="particle1" cx="55%" cy="125%" r="6%" />
+        <circle class="particle1" cx="75%" cy="120%" r="3.5%" />
+        <circle class="particle1" cx="95%" cy="126%" r="4%" />
+        <circle class="particle1" cx="115%" cy="122%" r="6.5%" />
+        <circle class="particle1" cx="135%" cy="121%" r="3.5%" />
+        
+        <circle class="particle2" cx="10%" cy="123%" r="3.5%" />
+        <circle class="particle2" cx="30%" cy="121%" r="6%" />
+        <circle class="particle2" cx="50%" cy="125%" r="4%" />
+        <circle class="particle2" cx="70%" cy="120%" r="5.5%" />
+        <circle class="particle2" cx="90%" cy="126%" r="3%" />
+        <circle class="particle2" cx="110%" cy="122%" r="5.5%" />
+        <circle class="particle2" cx="130%" cy="121%" r="6.5%" />
+
+        <circle class="particle3" cx="15%" cy="123%" r="5%" />
+        <circle class="particle3" cx="35%" cy="121%" r="4.5%" />
+        <circle class="particle3" cx="55%" cy="125%" r="6%" />
+        <circle class="particle3" cx="75%" cy="120%" r="3.5%" />
+        <circle class="particle3" cx="95%" cy="126%" r="4%" />
+        <circle class="particle3" cx="115%" cy="122%" r="6.5%" />
+        <circle class="particle3" cx="135%" cy="121%" r="3.5%" />
+
+        <circle class="particle4" cx="10%" cy="123%" r="3.5%" />
+        <circle class="particle4" cx="30%" cy="121%" r="6%" />
+        <circle class="particle4" cx="50%" cy="125%" r="4%" />
+        <circle class="particle4" cx="70%" cy="120%" r="5.5%" />
+        <circle class="particle4" cx="90%" cy="126%" r="3%" />
+        <circle class="particle4" cx="110%" cy="122%" r="5.5%" />
+        <circle class="particle4" cx="130%" cy="121%" r="6.5%" />
+
+        <circle class="particle5" cx="15%" cy="123%" r="5%" />
+        <circle class="particle5" cx="35%" cy="121%" r="4.5%" />
+        <circle class="particle5" cx="55%" cy="125%" r="6%" />
+        <circle class="particle5" cx="75%" cy="120%" r="3.5%" />
+        <circle class="particle5" cx="95%" cy="126%" r="4%" />
+        <circle class="particle5" cx="115%" cy="122%" r="6.5%" />
+        <circle class="particle5" cx="135%" cy="121%" r="3.5%" />
+    </svg>
+    
+    <div class="chat-container">
+        <!-- Name Input Section -->
+        <div id="name-section" class="name-section">
+            <input type="text" id="name-input" placeholder="Enter your username">
+            <button style="display: none;" id="start-chat-btn">Start Chat</button>
+        </div>
+        
+        <!-- Chat Interface (initially hidden) -->
+        <div id="chat-interface" class="chat-interface" style="display: none;">
+            <div class="chat-box" id="chat-box"></div>
+            <div class="input-box">
+                <input type="text" id="message-input" placeholder="Type your message...">
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

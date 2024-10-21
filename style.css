@@ -1,0 +1,257 @@
+/* Base Styles for Large Screens */
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+svg {
+    position: absolute;
+    z-index: -1001;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.chat-container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 70px;
+    font-family: Arial, sans-serif;
+}
+
+/* Name Input Section */
+.name-section {
+    position: absolute;
+    width: 50vw;
+    left: 25vw;
+    margin-top: 15vh;
+}
+
+#name-input {
+    height: 8vh;
+    width: 100%;
+    padding: 10px;
+    color: #1f8bff;
+    font-size: 3vw;
+    border-radius: 10px;
+    border: solid;
+    outline: none;
+    background: none;
+    border-color: #1f8bff;
+    border-width: 5px;
+}
+
+#name-input::placeholder {
+    color: #ddd;
+}
+
+#start-chat-btn {
+    font-size: 2vw;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#start-chat-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Chat Styles */
+.chat-box {
+    background: none;
+    width: 100%;
+    height: 400px;
+    border-radius: 15px 15px 0 0;
+    border: 1px solid #76adff;
+    overflow-y: scroll;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.message {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    max-width: 70%;
+    width: auto;
+}
+
+.message.sent {
+    background-color: #007bff;
+    color: white;
+    width: fit-content;
+    margin-left: auto;
+}
+
+.message.received {
+    background-color: #c0c0c0;
+    width: fit-content;
+    margin-right: auto;
+}
+
+/* Input Box */
+.input-box {
+    border: 1px solid #377de6;
+    display: flex;
+    padding: 10px;
+    background: none;
+    border-radius: 0 0 15px 15px;
+}
+
+.input-box input {
+    flex: 1;
+    border: 1px solid #76adff;
+    padding: 10px;
+    background: #dddddd6e;
+    color: white;
+    border-radius: 5px;
+}
+
+.input-box input::placeholder {
+    color: white;
+}
+
+.input-box button {
+    padding: 10px 20px;
+    background-color: #0da875;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.input-box button:hover {
+    background-color: #0056b3;
+}
+
+/* Clear Chat Button */
+.clear-chat-btn {
+    padding: 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+.clear-chat-btn:hover {
+    background-color: #c82333;
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+    .chat-container {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .name-section {
+        width: 80vw;
+        left: 10vw;
+        margin-top: 10vh;
+    }
+
+    #name-input {
+        width: 100%;
+        height: 6vh;
+        font-size: 4vw;
+    }
+
+    #start-chat-btn {
+        font-size: 3vw;
+    }
+
+    .chat-box {
+        height: 50vh;
+    }
+
+    .input-box input {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .chat-container {
+        width: 95%;
+    }
+
+    .name-section {
+        width: 95vw;
+        left: 2.5vw;
+        margin-top: 5vh;
+    }
+
+    #name-input {
+        width: 100%;
+        height: 5vh;
+        font-size: 5vw;
+    }
+
+    #start-chat-btn {
+        font-size: 4vw;
+    }
+
+    .chat-box {
+        height: 40vh;
+    }
+
+    .input-box input {
+        font-size: 4vw;
+    }
+
+    .input-box button {
+        font-size: 3vw;
+        padding: 5px 10px;
+    }
+}
+
+/* SVG Particle Animations */
+svg circle {
+    animation: particlesB 10s infinite;
+    position: relative;
+}
+
+.particle1 {
+    fill: rgb(54, 54, 223);
+}
+
+.particle2 {
+    animation: particlesB 10s 2s infinite;
+    fill: rgb(75, 75, 240);
+}
+
+.particle3 {
+    animation: particlesB 10s 4s infinite;
+    fill: rgb(92, 92, 245);
+}
+
+.particle4 {
+    animation: particlesB 10s 6s infinite;
+    fill: rgb(96, 96, 245);
+}
+
+.particle5 {
+    animation: particlesB 10s 8s infinite;
+    fill: rgb(96, 96, 245);
+}
+
+@keyframes particlesB {
+    0% {
+        transform: translateY(0);
+        opacity: 0.8;
+        fill: rgb(57, 57, 235);
+    }
+    100% {
+        transform: translateY(-800px);
+        opacity: 0;
+        fill: rgb(81, 81, 238);
+    }
+}
